@@ -1,16 +1,16 @@
-import Gameboard from "./gameboard";
+import Gameboard from './gameboard.js';
 
 class Player {
     constructor(type) {
         this.gameboard = new Gameboard();
-        this.type = type;
+        this.type = type; 
     }
 
-    takeTurn(opponentBoard, x, y){
+    takeTurn(opponentBoard, x, y) {
         opponentBoard.receiveAttack(x, y);
     }
 
-    computerMove(opponentBoard){
+    computerMove(opponentBoard) {
         let x, y;
         do {
             x = Math.floor(Math.random() * 10);

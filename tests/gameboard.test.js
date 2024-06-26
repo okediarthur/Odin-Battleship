@@ -23,5 +23,5 @@ test('allSunk correctly identifies when all ships are sunk', () => {
     const ship = new Ship(1);
     board.placeShip(ship, 0, 0);
     board.receiveAttack(0, 0);
-    expect(board.allSunk()).tobe(true);
+    expect(board.allSunk()).toBe(true);
 });
